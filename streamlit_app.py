@@ -24,5 +24,6 @@ streamlit.text(fruit_request.json())
 fruit_nicer=pandas.json_normalize(fruit_request.json())
 streamlit.dataframe(fruit_nicer)
 
-                                
+ 
+                                       
 
