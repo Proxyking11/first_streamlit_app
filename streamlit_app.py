@@ -19,7 +19,7 @@ streamlit.dataframe(fruit_to_show)
 
 streamlit.header('Fruit Vice Advice')
 fruit_request= requests.get('https://fruityvice.com/api/fruit/'+'kiwi')
---streamlit.text(fruit_request.json())
+
 
 fruit_nicer=pandas.json_normalize(fruit_request.json())
 streamlit.dataframe(fruit_nicer)
