@@ -24,6 +24,9 @@ fruit_request= requests.get('https://fruityvice.com/api/fruit/'+'kiwi')
 fruit_nicer=pandas.json_normalize(fruit_request.json())
 streamlit.dataframe(fruit_nicer)
 
+fruit_choice=streamlit.text_input('What fruit do you like ?' ,'kiwi')
+streamlit.write('the user entered: ', fruit_choice)
+                                
  
                                        
 
