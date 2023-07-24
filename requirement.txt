@@ -1,2 +1,2 @@
 # requirement.txt
-'snowflake-connector-python'
+pip install snowflake-connector-python
